@@ -1,13 +1,159 @@
+html {
+  min-height: 100%;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+  min-height: 100%;
+  padding-bottom: 5rem;
+}
+h1, h2  {
+  color: white;
+  padding: 3rem 0;
+  text-align: center;
+
+  text-transform: uppercase;
+
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 1px;
+}
+.lista-viajes .media {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 3rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.lista-viajes .media:last-of-type{
+  border-bottom: 0;
+}
+.lista-viajes .media-body p {
+  margin:0;
+}
+.lista-viajes .media-body button {
+  margin-top: 1rem!important;
+}
+.lista-viajes .media-body span {
+  font-weight: bold;
+}
+
+label {
+  color: white;
+}
+
+input[type="date"],
+input[type="time"] {
+  height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+}
+
+.viaje {
+  padding: 2rem;
+  background: white;
+  border-bottom: 1px solid #e1e1e1;
+  color: black;
+}
+
+.viaje p {
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+.viaje p span {
+  font-weight: normal;
+
+}
+.viaje:first-of-type {
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.viaje:last-of-type {
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+.button.eliminar,
+.button.eliminar:hover {
+  background-color: #c10059;
+  color: white;
+  margin-top: 2rem;
+}
+
+.alerta-error {
+  background-color: white;
+  color: red;
+  padding: 1rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-family:  'Staatliches', cursive;
+} 
+
+.form-usuario {
+  background-color: var(--gris2);
+  height: 100vh;
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-form {
+  padding: 5rem 3rem;
+  max-width: 500px;
+  width: 95%;
+  background-color: white;
+  border-radius: 1rem;
+  
+}
+
+.contenedor-form h1 {
+  color: #A445B2;
+}
+
+.campo-form {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+.campo-form:last-of-type {
+margin: 0;
+}
+.campo-form label {
+flex: 0 0 100px;
+font-family: var(--textFont);
+color: #A445B2;
+}
+.campo-form input[type="password"],
+.campo-form input[type="email"], 
+.campo-form input[type="text"],
+.campo-form select,
+.campo-form select option {
+border: 1px solid #e1e1e1;
+padding: 1rem;
+flex: 1;
+}
+
+.campo-form select {
+opacity: .7;
+}
+
+.campo-form input[type="submit"]{
+  color: white;
+}
+
+.enlace-cuenta {
+  margin-top: 2rem;
+  display: block;
+  opacity: .7;
+  text-decoration: none;
+  color: #A445B2;
+}
+
+.btn-primario {
+  background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+  color: white;
 }
